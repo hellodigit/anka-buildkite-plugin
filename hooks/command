@@ -153,7 +153,7 @@ bash_ops=()
 if $(plugin_read_config BASH_INTERACTIVE false); then
   bash_ops+=("-i")
 fi
-bash_ops+=("--login -e -o pipefail -c") # Needed, don't remove
+bash_ops+=("-leo pipefail -c") # Needed, don't remove
 
 ##########
 # ANKA RUN
